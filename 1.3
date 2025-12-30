@@ -1,0 +1,42 @@
+# 1.3 Excel RTL Framework & Automation
+
+This section describes the **RTL (Report Table Layer)** Excel architecture used to transform raw data into scalable reports.
+
+---
+
+## RTL Concept
+- Raw data from Answers was loaded into Excel
+- Each file could contain **hundreds of sheets**
+- Only **one reporting sheet** was visible to end users
+
+Hidden sheets acted as calculation and transformation layers.
+
+---
+
+## Key Techniques Used
+- Dynamic formulas (`SUMIFS`, `INDEX/MATCH`)
+- Controlled row and column visibility
+- VBA macros for:
+  - Filtering
+  - Layout switching
+  - Refresh automation
+
+---
+
+## Automation Workflow
+1. New raw data becomes available  
+2. RTL tables refresh automatically  
+3. Calculations and KPIs update  
+4. Visuals and tables refresh with **one click**
+
+This minimized manual effort and reduced error risk.
+
+---
+
+## Benefits
+- Consistent output across markets
+- Fast refresh cycles
+- Safe separation between raw data and presentation
+- Scalable reporting for hundreds of reports
+
+📊 Diagram reference: `visuals/rtl-architecture.png`
